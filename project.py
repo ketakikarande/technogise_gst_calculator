@@ -23,7 +23,7 @@ def findGst(key):
 	else:
 		print("Product Not Found!")
 	final_cost= int(quantity)*(float(cost)+(float(cost)*gst))
-	gst_amount= float(cost)*gst
+	gst_amount= int(quantity)*float(cost)*gst
 	print("The amount of GST applied is: ", round(gst_amount,2))
 	print("The final cost of the product is : ",final_cost)
 
