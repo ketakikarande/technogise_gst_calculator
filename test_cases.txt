@@ -1,0 +1,27 @@
+Test Case 1:
+	input: 1 rice 100
+	output: The amount of GST applied is:  0.0
+			The final cost of the product is :  100.0
+	importance: Checks the basic functionality of the code
+
+Test Case 2:
+	input: 10 lotion 200
+	output: The amount of GST applied is:  560.0
+			The final cost of the product is :  2560.0
+	importance: Checks the basic functionality of the code
+
+Test Case 3:
+	input: 10 Perfume 10
+	output: The amount of GST applied is:  28.0
+			The final cost of the product is :  128.0
+	importance: Checks the case insensitivity of given input.
+	
+Test Case 4:
+	input: 10 PeRfUmE 10
+	output: The amount of GST applied is:  28.0
+			The final cost of the product is :  128.0
+	importance: Checks the case insensitivity of given input.
+	
+	
+
+	
