@@ -1,13 +1,16 @@
-"""We store the data in a dictionary such that key corresponds to category name and
-value corresponds to products in 
+""" We store the data in a dictionary such that key corresponds to category name and
+value corresponds to products in a list. """
 categories={"food_grains":["rice", "dal", "wheat"],
 	"furniture":["table", "sofa", "chair"],
 	"electronics":["mobile", "tv", "tablet"],
 	"cosmetics":["cream", "perfume", "lotion"]}
-			
-user_input= str(input("Please Enter the quantity, product name and initial cost: \n"))
+
+#Takes user input such as quantity, product name and initial cost in a single string.
+user_input= str(input("Please enter the quantity, product name and initial cost: \n"))
 quantity, product, cost=user_input.split(" ")
 
+""" findGst function checks the GST to be applied on a particular category and then
+calculates and prints the applied GST amount and final amount of the product"""
 def findGst(key):
 	if (key=="food_grains"):
 		gst=0
@@ -23,7 +26,8 @@ def findGst(key):
 	gst_amount= float(cost)*gst
 	print("The amount of GST applied is: ", round(gst_amount,2))
 	print("The final cost of the product is : ",final_cost)
-			
+
+#Used for iterating a dictionary to access keys and their respectve values.	
 for key, value in categories.items():
 	if product.lower() in value:
-		findGst(key)# your code goes here
+		findGst(key)
